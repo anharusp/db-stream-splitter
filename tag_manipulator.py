@@ -10,6 +10,9 @@ class TagManipulator():
 
         trimmedResult = []
         for item in result:
-            trimmedResult.append(item.strip())
+            tmp = item.strip()
+            print(tmp)
+            if len(tmp) > 0:
+                trimmedResult.append(tmp)
 
         return trimmedResult
