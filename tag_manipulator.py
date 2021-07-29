@@ -8,4 +8,8 @@ class TagManipulator():
         if( len(tempResult[0]) > 0 ):
             result = tempResult  
 
-        return result
+        trimmedResult = []
+        for item in result:
+            trimmedResult.append(item.strip())
+
+        return trimmedResult
